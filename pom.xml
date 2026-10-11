@@ -24,20 +24,22 @@
 		<java.version>17</java.version>
 	</properties>
 
+
 	<dependencies>
-		<!-- REST API development -->
+		<!-- Spring Boot REST API -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- Automated testing -->
+		<!-- JUnit 5 and other testing libraries -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 
 	<build>
 		<plugins>

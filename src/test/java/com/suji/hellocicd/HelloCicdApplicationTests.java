@@ -1,13 +1,18 @@
+
 package com.suji.hellocicd;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class HelloCicdApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
+	void helloReturnsExpectedMessage() {
+		HelloController controller = new HelloController();
 
+		String response = controller.hello();
+
+		assertEquals("Hello, CI/CD Pipeeline", response);
+	}
 }
